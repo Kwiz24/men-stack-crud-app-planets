@@ -1,0 +1,12 @@
+<body>
+    <!-- update the header -->
+    <h1>Edit <%= planet.name %></h1>
+      <form action="/planets/<%=planet._id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="isReadyToView">Ready to View?</label>
+        <input type="checkbox" name="isReadyToView" <% if (planet.isReadyToView) { %>checked<% } %> >
+        <button type="submit">Update Planet</button>
+      </form>
+    <a href="/planets">Back to Planets</a>
+  </body>

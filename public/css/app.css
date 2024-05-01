@@ -4,11 +4,10 @@ html, body, ul, li {
     list-style: none;
   }
   
-  /* Global styles */
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #001f3f; /* Dark blue background */
-    color: #fff; /* White text */
+    background-color: #001f3f;
+    color: #fff;
     line-height: 1.6;
   }
   
@@ -20,7 +19,7 @@ html, body, ul, li {
   
   a {
     text-decoration: none;
-    color: #fff; /* White links */
+    color: #fff; 
   }
   
   a:hover {
@@ -33,9 +32,8 @@ html, body, ul, li {
     text-align: center;
   }
   
-  /* Header */
   header {
-    background-color: #0074D9; /* Blue header */
+    background-color: #0074D9;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -45,7 +43,6 @@ html, body, ul, li {
     margin: 0;
   }
   
-  /* Navigation */
   nav {
     margin-bottom: 20px;
     text-align: center;

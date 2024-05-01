@@ -7,17 +7,19 @@ const morgan = require("morgan");
 
 const app = express();
 
-  const Planet = require("./models/planet.js");
+const Planet = require("./models/planet.js");
 
   app.use(express.urlencoded({ extended: false }));
   app.use(methodOverride("_method"));
-app.use(morgan("dev"));
- 
+  app.use(morgan("dev"));
+
+  app.use(express.static('public'));
+
   app.get("/", async (req, res) => {
     res.render("index.ejs");
   });
 
-  app.get("/olanets", async (req, res) => {
+  app.get("/planets", async (req, res) => {
       const allPlanets = await Planet.find();
       res.render("index.ejs", {planets: allPlanets});
   });

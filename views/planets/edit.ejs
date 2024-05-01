@@ -1,5 +1,8 @@
 <body>
     <!-- update the header -->
+    <head>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
     <h1>Edit <%= planet.name %></h1>
       <form action="/planets/<%=planet._id%>?_method=PUT" method="POST">
         <label for="name">Name:</label>

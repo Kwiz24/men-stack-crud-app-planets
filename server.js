@@ -65,7 +65,7 @@ const Planet = require("./models/planet.js");
     }
     
     // Update the planet in the database
-    await planet.findByIdAndUpdate(req.params.planetId, req.body);
+    await Planet.findByIdAndUpdate(req.params.planetId, req.body);
   
     // Redirect to the planet's show page to see the updates
     res.redirect(`/planets/${req.params.planetId}`);
